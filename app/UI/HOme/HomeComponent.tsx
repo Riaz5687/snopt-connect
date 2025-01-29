@@ -13,6 +13,7 @@ import {
 } from "@/app/UI/svgs"
 
 import {cardsData, testimonialsData} from '@/app/lib/data'
+import Link from "next/link";
 
 export default function HomeComponent() {
     return (
@@ -43,13 +44,16 @@ export default function HomeComponent() {
                         <p className="font-semibold text-3xl pb-6">
                             The platform serving <br/> the sport industry
                         </p>
+                        <Link href={'/signup-step-1'}>
                         <button
-                            className="px-4 relative py-2 rounded-[2px] border-2 font-bold border-yellow-600 z-10 hover:scale-105 duration-300 ease-in transition-transform cursor-pointer">
+                            className="px-4 relative py-2 rounded-[2px] border-2 font-bold border-yellow-600 z-10 hover:scale-105 duration-300 ease-in transition-transform cursor-pointer"
+                            >
                             <div className="flex items-center gap-2 ">
                                 <BtnLogo/>
                                 Sign up now
                             </div>
                         </button>
+                        </Link>
                     </div>
                 </div>
 
