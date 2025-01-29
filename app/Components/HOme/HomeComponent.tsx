@@ -210,7 +210,7 @@ export default function HomeComponent() {
         </div>
 
         {/* 2nd Section  */}
-        <div className=" px-4 md:px-16 lg:px-24 xl:px-32 mt-16 flex items-center justify-around flex-col gap-10 md:flex-row max-w-[1800px] w-full mx-auto">
+        <div className=" px-4 md:px-16 lg:px-24 xl:px-32 mt-16 flex items-center justify-between flex-col gap-10 md:flex-row max-w-[1400px] w-full mx-auto">
           <div className="flex flex-col items-center relative">
             <Image
               src={"/assets/codyy.svg"}
@@ -243,7 +243,7 @@ export default function HomeComponent() {
         </div>
 
         {/* 3rd Section  */}
-        <div className=" px-4 md:px-16 lg:px-24 xl:px-32 mt-16 flex items-center justify-around flex-col gap-10 md:flex-row max-w-[1800px] mx-auto">
+        <div className=" px-4 md:px-16 lg:px-24 xl:px-32 mt-16 flex items-center justify-around flex-col gap-10 md:flex-row max-w-[1400px] mx-auto">
           <div className="max-w-[431px] mx-auto relative">
             <h3 className="font-bold text-4xl pb-4 mb-6 ">
               Powerful tool powered by AI
