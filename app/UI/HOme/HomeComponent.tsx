@@ -10,166 +10,9 @@ import {
     LequipeSvg,
     PerformanceButtonSvg,
     SecondSectionLine,
-} from "@/app/Components/svgs"
+} from "@/app/UI/svgs"
 
-const cardsData = [
-    {
-        clubName1: "Paris Saint-Germain",
-        img: "/assets/user1.png",
-        price: "35 €",
-        name: "Christophe",
-        badg1: "/assets/clubBadg.svg",
-        badg2: "/assets/clubBadg2.svg",
-        clubName2: "Arsenal",
-        city: "Madrid",
-        date: "30/11/2023",
-        published: "Published on",
-        shieldA: "/assets/shieldA.svg",
-        shieldS: "/assets/shieldS.svg",
-        publishedDate: "18/11/2022",
-    },
-    {
-        clubName1: "Paris Saint-Germain",
-        img: "/assets/user1.png",
-        price: "35 €",
-        name: "Christophe",
-        badg1: "/assets/clubBadg.svg",
-        badg2: "/assets/clubBadg2.svg",
-        clubName2: "Arsenal",
-        city: "Madrid",
-        date: "30/11/2023",
-        published: "Published on",
-        shieldA: "/assets/shieldA.svg",
-        shieldS: "/assets/shieldS.svg",
-        publishedDate: "18/11/2022",
-    },
-    {
-        clubName1: "Paris Saint-Germain",
-        img: "/assets/user1.png",
-        price: "35 €",
-        name: "Christophe",
-        badg1: "/assets/clubBadg.svg",
-        badg2: "/assets/clubBadg2.svg",
-        clubName2: "Arsenal",
-        city: "Madrid",
-        date: "30/11/2023",
-        published: "Published on",
-        shieldA: "/assets/shieldA.svg",
-        shieldS: "/assets/shieldS.svg",
-        publishedDate: "18/11/2022",
-    },
-    {
-        clubName1: "Paris Saint-Germain",
-        img: "/assets/user1.png",
-        price: "35 €",
-        name: "Christophe",
-        badg1: "/assets/clubBadg.svg",
-        badg2: "/assets/clubBadg2.svg",
-        clubName2: "Arsenal",
-        city: "Madrid",
-        date: "30/11/2023",
-        published: "Published on",
-        shieldA: "/assets/shieldA.svg",
-        shieldS: "/assets/shieldS.svg",
-        publishedDate: "18/11/2022",
-    },
-    {
-        clubName1: "Paris Saint-Germain",
-        img: "/assets/user1.png",
-        price: "35 €",
-        name: "Christophe",
-        badg1: "/assets/clubBadg.svg",
-        badg2: "/assets/clubBadg2.svg",
-        clubName2: "Arsenal",
-        city: "Madrid",
-        date: "30/11/2023",
-        published: "Published on",
-        shieldA: "/assets/shieldA.svg",
-        shieldS: "/assets/shieldS.svg",
-        publishedDate: "18/11/2022",
-    },
-    {
-        clubName1: "Paris Saint-Germain",
-        img: "/assets/user1.png",
-        price: "35 €",
-        name: "Christophe",
-        badg1: "/assets/clubBadg.svg",
-        badg2: "/assets/clubBadg2.svg",
-        clubName2: "Arsenal",
-        city: "Madrid",
-        date: "30/11/2023",
-        published: "Published on",
-        shieldA: "/assets/shieldA.svg",
-        shieldS: "/assets/shieldS.svg",
-        publishedDate: "18/11/2022",
-    },
-    {
-        clubName1: "Paris Saint-Germain",
-        img: "/assets/user1.png",
-        price: "35 €",
-        name: "Christophe",
-        badg1: "/assets/clubBadg.svg",
-        badg2: "/assets/clubBadg2.svg",
-        clubName2: "Arsenal",
-        city: "Madrid",
-        date: "30/11/2023",
-        published: "Published on",
-        shieldA: "/assets/shieldA.svg",
-        shieldS: "/assets/shieldS.svg",
-        publishedDate: "18/11/2022",
-    },
-];
-
-const testimonialsData = [
-    {
-        key: 1,
-        img: "/assets/user1.png",
-        name: "Jenny Wilson",
-        position: "Scout",
-        review:
-            "Eget eu rhoncus scelerisque sed quis. Ut tincidunt erat purus neque. Placerat consectetur risus vulputate orci nibh nunc aliquam. Pellentesque elit viverra natoque hendrerit in amet. Orci natoque at neque neque consequat. ",
-    },
-    {
-        key: 2,
-        img: "/assets/user2.png",
-        name: "Ronald Richards",
-        position: "Gestionnaire d`OS",
-        review:
-            "Eget eu rhoncus scelerisque sed quis. Ut tincidunt erat purus neque. Placerat consectetur risus vulputate orci nibh nunc aliquam. Pellentesque elit viverra natoque hendrerit in amet. Orci natoque at neque neque  ",
-    },
-    {
-        key: 3,
-        img: "/assets/user3.png",
-        name: "Jacob Jones",
-        position: "Coach",
-        review:
-            "Consectetur ut malesuada justo ut ullamcorper adipiscing. Convallis nisi lacus tempor lacus lorem a. Ut habitasse augue praesent elit tristique purus. Nunc nisl in urna egestas eu nunc arcu aenean proin. Tortor euismod vitae pellentesque !",
-    },
-    {
-        key: 4,
-        img: "/assets/user3.png",
-        name: "Jacob Jones",
-        position: "Coach",
-        review:
-            "Consectetur ut malesuada justo ut ullamcorper adipiscing. Convallis nisi lacus tempor lacus lorem a. Ut habitasse augue praesent elit tristique purus. Nunc nisl in urna egestas eu nunc arcu aenean proin. Tortor euismod vitae pellentesque !",
-    },
-    {
-        key: 5,
-        img: "/assets/user3.png",
-        name: "Jacob Jones",
-        position: "Coach",
-        review:
-            "Consectetur ut malesuada justo ut ullamcorper adipiscing. Convallis nisi lacus tempor lacus lorem a. Ut habitasse augue praesent elit tristique purus. Nunc nisl in urna egestas eu nunc arcu aenean proin. Tortor euismod vitae pellentesque !",
-    },
-    {
-        key: 6,
-        img: "/assets/user3.png",
-        name: "Jacob Jones",
-        position: "Coach",
-        review:
-            "Consectetur ut malesuada justo ut ullamcorper adipiscing. Convallis nisi lacus tempor lacus lorem a. Ut habitasse augue praesent elit tristique purus. Nunc nisl in urna egestas eu nunc arcu aenean proin. Tortor euismod vitae pellentesque !",
-    },
-];
+import {cardsData, testimonialsData} from '@/app/lib/data'
 
 export default function HomeComponent() {
     return (
@@ -198,11 +41,12 @@ export default function HomeComponent() {
                     <div className="z-10">
                         <h1 className="font-extrabold text-5xl pb-4">Snopt Connect</h1>
                         <p className="font-semibold text-3xl pb-6">
-                            The platform serving <br /> the sport industry
+                            The platform serving <br/> the sport industry
                         </p>
-                        <button className="px-4 relative py-2 rounded-[2px] border-2 font-bold border-yellow-600 z-10 hover:scale-105 duration-300 ease-in transition-transform cursor-pointer">
+                        <button
+                            className="px-4 relative py-2 rounded-[2px] border-2 font-bold border-yellow-600 z-10 hover:scale-105 duration-300 ease-in transition-transform cursor-pointer">
                             <div className="flex items-center gap-2 ">
-                                <BtnLogo />
+                                <BtnLogo/>
                                 Sign up now
                             </div>
                         </button>
@@ -210,7 +54,8 @@ export default function HomeComponent() {
                 </div>
 
                 {/* 2nd Section  */}
-                <div className=" px-4 md:px-16 lg:px-24 xl:px-32 mt-16 flex items-center justify-around flex-col gap-10 md:flex-row max-w-[1800px] w-full mx-auto">
+                <div
+                    className=" px-4 md:px-16 lg:px-24 xl:px-32 mt-16 flex items-center justify-around flex-col gap-10 md:flex-row max-w-[1800px] w-full mx-auto">
                     <div className="flex flex-col items-center relative">
                         <Image
                             src={"/assets/codyy.svg"}
@@ -222,10 +67,10 @@ export default function HomeComponent() {
                             priority
                         />
                         <div className="mt-14">
-                            <FcSnoptSvg />
+                            <FcSnoptSvg/>
                         </div>
                         <div className="absolute hidden xl:block bottom-0 lg:-right-32 xl:-right-60 rotate-12">
-                            <SecondSectionLine />
+                            <SecondSectionLine/>
                         </div>
                     </div>
                     <div className="max-w-[431px]  mx-auto">
@@ -236,14 +81,16 @@ export default function HomeComponent() {
                             Onboard in 5 minutes and start monetizing your time when watching
                             soccer games.
                         </p>
-                        <div className="xl:-ml-20 2xl:-ml-36 mt-7 transition-transform cursor-pointer hover:scale-110 ease-in duration-300">
-                            <PerformanceButtonSvg />
+                        <div
+                            className="xl:-ml-20 2xl:-ml-36 mt-7 transition-transform cursor-pointer hover:scale-110 ease-in duration-300">
+                            <PerformanceButtonSvg/>
                         </div>
                     </div>
                 </div>
 
                 {/* 3rd Section  */}
-                <div className=" px-4 md:px-16 lg:px-24 xl:px-32 mt-16 flex items-center justify-around flex-col gap-10 md:flex-row max-w-[1800px] mx-auto">
+                <div
+                    className=" px-4 md:px-16 lg:px-24 xl:px-32 mt-16 flex items-center justify-around flex-col gap-10 md:flex-row max-w-[1800px] mx-auto">
                     <div className="max-w-[431px] mx-auto relative">
                         <h3 className="font-bold text-4xl pb-4 mb-6 ">
                             Powerful tool powered by AI
@@ -253,14 +100,15 @@ export default function HomeComponent() {
                             accumsan in ullamcorper donec platea ut dignissim auctor. Cras
                             enim feugiat et hac in vulputate cursus vitae.
                         </p>
-                        <button className="px-4 relative py-2 rounded-[2px] border-2 font-bold border-yellow-600 z-10 hover:scale-105 duration-300 ease-in transition-transform cursor-pointer">
+                        <button
+                            className="px-4 relative py-2 rounded-[2px] border-2 font-bold border-yellow-600 z-10 hover:scale-105 duration-300 ease-in transition-transform cursor-pointer">
                             <div className="flex items-center gap-2 ">
-                                <BtnLogo />
+                                <BtnLogo/>
                                 Sign up now
                             </div>
                         </button>
                         <div className="absolute -left-36 -top-80 -rotate-12 z-0">
-                            <AiSectionLines />
+                            <AiSectionLines/>
                         </div>
                     </div>
                     <div className="flex items-center justify-center flex-1 relative mt-8 md:mt-0">
@@ -278,7 +126,7 @@ export default function HomeComponent() {
 
                 {/* 4th Section  */}
                 <div className=" px-4 md:px-16 lg:px-24 xl:px-32 mt-16 flex items-center justify-center flex-col gap-4">
-                    <div className="w-[70%] self-end h-0.5 bg-gradient-to-r from-white/20 to-transparent mb-10" />
+                    <div className="w-[70%] self-end h-0.5 bg-gradient-to-r from-white/20 to-transparent mb-10"/>
                     <div className="">
                         <h4 className="font-bold text-4xl pb-4 ">
                             Le meilleur outil des clubs
@@ -290,9 +138,10 @@ export default function HomeComponent() {
                             &quot;Find reports on our marketplace. Order reports & hire
                             scouts.&quot;
                         </p>
-                        <button className="px-4 relative py-2 rounded-[2px] border-2 font-bold border-yellow-600 z-10 hover:scale-105 duration-300 ease-in transition-transform cursor-pointer">
+                        <button
+                            className="px-4 relative py-2 rounded-[2px] border-2 font-bold border-yellow-600 z-10 hover:scale-105 duration-300 ease-in transition-transform cursor-pointer">
                             <div className="flex items-center gap-2 ">
-                                <BtnLogo />
+                                <BtnLogo/>
                                 Sign up now
                             </div>
                         </button>
@@ -301,8 +150,8 @@ export default function HomeComponent() {
 
                 {/* 5th section  */}
                 <div className="mt-32  pb-16 relative w-full  overflow-hidden">
-                    <div className="w-32 h-[70%] pointer-events-non absolute -left-4 bg-[#110F1A] filter blur-xl" />
-                    <div className="w-32 h-[70%] pointer-events-non absolute -right-4 bg-[#110F1A] filter blur-xl" />
+                    <div className="w-32 h-[70%] pointer-events-non absolute -left-4 bg-[#110F1A] filter blur-xl"/>
+                    <div className="w-32 h-[70%] pointer-events-non absolute -right-4 bg-[#110F1A] filter blur-xl"/>
                     <div className="overflow-x-scroll flex flex-shrink-0 scrollbar-hide gap-10">
                         {cardsData.map((player) => (
                             <div
@@ -316,7 +165,7 @@ export default function HomeComponent() {
                                     <div>{player.price}</div>
                                 </div>
                                 <div className="pb-7 flex items-center gap-2">
-                                    <Image src={player.img} alt="user" width={24} height={24} />
+                                    <Image src={player.img} alt="user" width={24} height={24}/>
                                     <p className="font-medium">{player.name}</p>
                                     <div className="flex items-center">
                                         <Image
@@ -337,7 +186,7 @@ export default function HomeComponent() {
                                 <div className="flex items-center gap-3 pb-6">
                                     <div className="bg-[#303054] rounded-sm  p-1.5 flex flex-col items-center">
                                         <span className=" pb-1 font-bold px-6">0</span>
-                                        <div className="bg-[#1F1F37] w-full h-1" />
+                                        <div className="bg-[#1F1F37] w-full h-1"/>
                                         <span className="pt-1 font-bold px-6">0</span>
                                     </div>
 
@@ -367,18 +216,19 @@ export default function HomeComponent() {
                 </div>
 
                 {/* 6th Section  */}
-                <div className=" px-4 md:px-10  bg-gradient-to-b from-transparent via-[#1A1A2D] to-transparent overflow-hidden mt-16 mb-32">
+                <div
+                    className=" px-4 md:px-10  bg-gradient-to-b from-transparent via-[#1A1A2D] to-transparent overflow-hidden mt-16 mb-32">
                     <h4 className="font-bold text-4xl pb-4 text-center mb-16 ">
                         They use Snopt
                     </h4>
                     <div className="flex shrink-0  items-center gap-6 overflow-x-scroll scrollbar-hide ">
-                        {testimonialsData?.map(({ key, img, name, position, review }) => (
+                        {testimonialsData?.map(({key, img, name, position, review}) => (
                             <div
                                 key={key}
                                 className="min-w-[332px] max-w-[350px] pl-4 border-l-2 mx-auto border-white/20"
                             >
                                 <div className="flex items-center gap-4 mb-4">
-                                    <Image src={img} width={50} height={50} alt="user" />
+                                    <Image src={img} width={50} height={50} alt="user"/>
                                     <div>
                                         <p className="text-lg font-bold">{name}</p>
                                         <p className="text-[#CBCBE1]">{position}</p>
@@ -391,21 +241,22 @@ export default function HomeComponent() {
                 </div>
 
                 {/* 7th Section  */}
-                <div className="h-0.5 bg-gradient-to-l from-white/20 from-10% to-transparent to-90% mb-3" />
-                <div className=" px-4 md:px-16 lg:px-24 xl:px-32 my-16 flex items-center justify-center flex-col gap-4 ">
+                <div className="h-0.5 bg-gradient-to-l from-white/20 from-10% to-transparent to-90% mb-3"/>
+                <div
+                    className=" px-4 md:px-16 lg:px-24 xl:px-32 my-16 flex items-center justify-center flex-col gap-4 ">
                     <h5 className="font-bold text-4xl pb-20">They talk about us</h5>
                     <div className="flex items-center gap-8 flex-wrap justify-evenly w-full">
                         <div>
-                            <LequipeSvg />
+                            <LequipeSvg/>
                         </div>
                         <div>
-                            <LeParisienSvg />
+                            <LeParisienSvg/>
                         </div>
                         <div>
-                            <FootMercatoSvg />
+                            <FootMercatoSvg/>
                         </div>
                         <div>
-                            <LeProgresSvg />
+                            <LeProgresSvg/>
                         </div>
                     </div>
                 </div>
