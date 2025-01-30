@@ -12,7 +12,7 @@ import Link from "next/link";
 
 export default function Page() {
   return (
-    <div className="md:ml-20 lg:ml-32 xl:ml-40">
+    <div className="lg:ml-32 xl:ml-40">
       <h2 className="font-bold text-[32px] pb-4 pt-12 md:pt-24 text-center md:text-left">
         Sign up - Step 2/4
       </h2>
@@ -24,7 +24,7 @@ export default function Page() {
               <input
                 type="tel"
                 placeholder="c.gailtier@psg.com"
-                className="min-w-[280px] md:w-[392px] bg-formInputColor py-2 pl-8 pr-3 rounded-sm "
+                className="min-w-[280px] md:w-[300px] lg:w-[392px] bg-formInputColor py-2 pl-8 pr-3 rounded-sm "
               />
               <PhoneSvg className={"absolute top-3 left-2"} />
             </div>
@@ -35,7 +35,7 @@ export default function Page() {
               <input
                 type="text"
                 placeholder="KyKy"
-                className="min-w-[280px] md:w-[392px] bg-formInputColor py-2 pl-8 pr-3 rounded-sm "
+                className="min-w-[280px] md:w-[300px] lg:w-[392px] bg-formInputColor py-2 pl-8 pr-3 rounded-sm "
               />
               <PersonFilledSvg className={"absolute top-3 left-2"} />
             </div>
@@ -46,7 +46,7 @@ export default function Page() {
               <input
                 type="text"
                 placeholder="Kylian"
-                className="min-w-[280px] md:w-[392px] bg-formInputColor py-2 pl-8 pr-3 rounded-sm "
+                className="min-w-[280px] md:w-[300px] lg:w-[392px] bg-formInputColor py-2 pl-8 pr-3 rounded-sm "
               />
               <PersonFilledSvg className={"absolute top-3 left-2"} />
             </div>
@@ -57,7 +57,7 @@ export default function Page() {
               <input
                 type="text"
                 placeholder="Mbappe"
-                className="min-w-[280px] md:w-[392px] bg-formInputColor py-2 pl-8 pr-3 rounded-sm "
+                className="min-w-[280px] md:w-[300px] lg:w-[392px] bg-formInputColor py-2 pl-8 pr-3 rounded-sm "
               />
               <PersonFilledSvg className={"absolute top-3 left-2"} />
             </div>
@@ -68,7 +68,7 @@ export default function Page() {
               <input
                 type="text"
                 placeholder="20 rue de Luebeck, 78765, Paris, FRANCE"
-                className="min-w-[280px] md:w-[392px] bg-formInputColor py-2 pl-8 pr-3 rounded-sm "
+                className="min-w-[280px] md:w-[300px] lg:w-[392px] bg-formInputColor py-2 pl-8 pr-3 rounded-sm "
               />
               <PasswordInputSvg className={"absolute top-3 left-2"} />
             </div>
@@ -79,7 +79,7 @@ export default function Page() {
               <input
                 type="date"
                 placeholder="20/12/1998"
-                className="min-w-[280px] md:w-[392px] bg-formInputColor py-2 pl-8 pr-3 rounded-sm "
+                className="min-w-[280px] md:w-[300px] lg:w-[392px] bg-formInputColor py-2 pl-8 pr-3 rounded-sm "
               />
               <CalenderSvg className={"absolute top-3 left-2"} />
             </div>
