@@ -106,11 +106,6 @@ export default function Page() {
           </CustomButton>
         </Link>
       </div>
-      <Link href={"/login"}>
-        <p className="text-left underline underline-offset-2 cursor-pointer text-[#99AFFF] pb-2 pt-4">
-          I already have an account sign in
-        </p>
-      </Link>
     </div>
   );
 }

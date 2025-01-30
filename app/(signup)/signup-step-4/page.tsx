@@ -51,7 +51,7 @@ export default function Page() {
               <div className="relative">
                 <input
                   type="date"
-                  className="bg-formInputColor w-full md:w-[150px] lg:w-[196px] py-2 pl-8 pr-3 rounded-sm "
+                  className="bg-formInputColor w-full md:w-[145px] lg:w-[190px] py-2 pl-8 pr-3 rounded-sm "
                 />
                 {/* Icon for Expiration Date Input */}
                 <PersonFilledSvg className={"absolute top-3 left-2"} />
@@ -65,7 +65,7 @@ export default function Page() {
                 <input
                   type="text"
                   placeholder="***"
-                  className="bg-formInputColor w-full md:w-[150px] lg:w-[196px] py-2 pl-8 pr-3 rounded-sm "
+                  className="bg-formInputColor w-full md:w-[145px] lg:w-[190px] py-2 pl-8 pr-3 rounded-sm "
                 />
                 {/* Icon for CVV Input */}
                 <PasswordInputSvg className={"absolute top-3 left-2"} />
@@ -84,13 +84,6 @@ export default function Page() {
           <SaveSvg />
         </CustomButton>
       </div>
-
-      {/* Link to Login Page */}
-      <Link href={"/login"}>
-        <p className="text-left underline underline-offset-2 cursor-pointer text-[#99AFFF] pb-2 pt-4">
-          I already have an account sign in
-        </p>
-      </Link>
     </div>
   );
 }
