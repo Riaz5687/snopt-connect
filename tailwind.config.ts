@@ -12,6 +12,9 @@ export default {
       colors: {
         background: "#110F1A",
         foreground: "var(--foreground)",
+        formWraperColor: "#1A1A2D",
+        formInputColor: "#303054",
+        customBorderColor: "#52528E",
       },
     },
   },
