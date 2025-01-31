@@ -16,6 +16,14 @@
 
 body {
   color: var(--foreground);
-  background: var(--background);
+  background: #110f1a;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
 }

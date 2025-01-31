@@ -17,23 +17,23 @@ const Header = () => {
               <LanguageDropdown />
             </div>
             <div className="p-[1px] hidden md:block bg-gradient-to-r from-[#E1097C] rounded-sm to-[#1A4CFF]">
-              <Link href={'/login'}>
-              <CustomButton
-                name="Sign in"
-                className=" text-[16px] font-semibold bg-background"
-              >
-                <SignInSvg />
-              </CustomButton>
+              <Link href={"/login"}>
+                <CustomButton
+                  name="Sign in"
+                  className=" text-[16px] font-semibold bg-background"
+                >
+                  <SignInSvg />
+                </CustomButton>
               </Link>
             </div>
             <div>
-              <Link href={'/signup-step-1'}>
-              <CustomButton
-                name="Sign up"
-                className="bg-gradient-to-r from-[#E30E7A] via-[#F971BA] to-[#F740A2] text-[16px] font-semibold"
-              >
-                <SignUpSvg />
-              </CustomButton>
+              <Link href={"/signup-step-1"}>
+                <CustomButton
+                  name="Sign up"
+                  className="bg-gradient-to-r from-[#E30E7A] via-[#F971BA] to-[#F740A2] text-[16px] font-semibold"
+                >
+                  <SignUpSvg />
+                </CustomButton>
               </Link>
             </div>
           </div>

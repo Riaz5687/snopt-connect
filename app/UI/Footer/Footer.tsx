@@ -12,7 +12,7 @@ const Footer = () => {
     "/footer/twitter.svg",
   ];
   return (
-    <div className="w-full mt-10 p-9 bg-[#1A1A2D] border-t border-muted-purple flex-col justify-start items-start gap-12 inline-flex">
+    <div className="w-full mt-10 p-9 bg-[#1A1A2D] border-t border-muted-purple flex-col justify-start items-start gap-12 relative z-10 inline-flex">
       <div className="max-w-[1400px] m-auto w-full">
         <div className="w-full flex justify-between gap-4">
           <div className="self-stretch justify-between items-start  inline-flex flex-col">
@@ -67,6 +67,7 @@ const Footer = () => {
                     alt="logo"
                     height={20}
                     width={20}
+                    unoptimized
                   />
                 ))}
               </div>
