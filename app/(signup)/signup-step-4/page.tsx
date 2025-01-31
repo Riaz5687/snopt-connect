@@ -1,8 +1,7 @@
 "use client";
 
 import CustomButton from "@/app/UI/Custom/CustomButton";
-import { PasswordInputSvg, PersonFilledSvg, SaveSvg } from "@/app/UI/svgs";
-import Link from "next/link";
+import { PasswordInputSvg, PersonFilledSvg, TickSvg } from "@/app/UI/svgs";
 
 export default function Page() {
   return (
@@ -81,7 +80,7 @@ export default function Page() {
           name="Enregister"
           className="bg-gradient-to-r text-sm md:text-base from-[#E30E7A] via-[#F971BA] to-[#F740A2] py-2 rounded-sm pl-4 pr-3"
         >
-          <SaveSvg />
+          <TickSvg />
         </CustomButton>
       </div>
     </div>

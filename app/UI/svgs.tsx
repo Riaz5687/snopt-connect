@@ -882,3 +882,18 @@ export const CalenderSvg = ({ className }: { className: string }) => (
     />
   </svg>
 );
+
+export const TickSvg = () => (
+  <svg
+    width="16"
+    height="17"
+    viewBox="0 0 16 17"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M6.29974 12.4L2.56641 8.66665L3.28307 7.94998L6.29974 10.9667L12.6997 4.56665L13.4164 5.28332L6.29974 12.4Z"
+      fill="#EDECF4"
+    />
+  </svg>
+);
