@@ -22,3 +22,11 @@ export type TestimonialsData = {
     position: string;
     review: string;
 }
+
+
+export type User = {
+    id: string;
+    name: string;
+    email: string;
+    password: string;
+};
