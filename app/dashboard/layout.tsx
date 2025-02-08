@@ -100,7 +100,7 @@ const layout = ({ children }: { children: React.ReactNode }) => {
         </div>
 
         {/* Main content area where children components will be rendered */}
-        <div className="relative z-10 p-8">{children}</div>
+        <div className="relative z-10 p-8 pb-0">{children}</div>
       </div>
     </div>
   );

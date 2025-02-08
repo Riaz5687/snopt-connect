@@ -1,5 +1,9 @@
+"use client";
 import Image from "next/image";
 import React from "react";
+import { CgCloseR } from "react-icons/cg";
+import { BsPencilSquare } from "react-icons/bs";
+import ToggleButton from "../Custom/ToggleButton";
 
 // Define the type for props
 interface CardProps {
@@ -23,6 +27,7 @@ interface CardProps {
     | undefined;
   views?: number;
   sold?: number;
+  reportStatus?: string;
 }
 
 // Functional Component Definition
@@ -36,9 +41,10 @@ const Card: React.FC<CardProps> = ({
   details,
   views,
   sold,
+  reportStatus,
 }) => {
   return (
-    <div className="w-[350px] bg-gradient-to-b from-[#303054] to-[#1F1F37] p-4 rounded-md shadow-md shadow-[#303054]">
+    <div className="w-[350px] h-fit bg-gradient-to-b from-[#303054] to-[#1F1F37] p-4 rounded-md shadow-md shadow-[#303054]">
       {/* Club Name & Price */}
       <div className="flex justify-between items-center pb-4">
         <div className="px-1.5 py-0.5 bg-[#52528E] text-sm">
@@ -81,24 +87,74 @@ const Card: React.FC<CardProps> = ({
         </div>
       </div>
 
+      {/* Details Section */}
       <div className="flex items-center justify-between">
         <div className="flex flex-col items-start gap-0.5">
-          {details && (
+          {details?.date && (
             <span className="text-sm font-semibold">{details.date}</span>
           )}
-          {details && (
+          {details?.city && (
             <span className="text-sm font-normal">{details.city}</span>
           )}
         </div>
         <div className="flex flex-col items-end gap-0.5">
           {views && <span className="text-sm font-normal">{views} Views</span>}
-          {details && (
+          {sold && (
             <span className="text-sm text-[#DBD71B] font-extrabold">
               Sold {sold} times
             </span>
           )}
         </div>
       </div>
+
+      {/* Report Status Handling */}
+      {reportStatus && (
+        <div
+          className={`mt-2 flex ${
+            reportStatus === "Cancel order" ||
+            reportStatus === "Waiting confirmation"
+              ? "justify-end"
+              : "justify-between"
+          } items-center gap-2`}
+        >
+          {/* Button for specific statuses */}
+          {reportStatus === "For sale" ? (
+            <ToggleButton text={"For Sale"} />
+          ) : (
+            (reportStatus === "Finish report" ||
+              reportStatus === "Waiting confirmation" ||
+              reportStatus === "Cancel order" ||
+              reportStatus === "Accept order") && (
+              <button
+                className={`w-[179px]  px-3 py-1 rounded-[4px] ${
+                  reportStatus === "Finish report" ||
+                  reportStatus === "Waiting confirmation"
+                    ? "bg-[#84275E]"
+                    : reportStatus === "Accept order"
+                    ? "bg-[#305441]"
+                    : "bg-[#52528E]"
+                }`}
+              >
+                {reportStatus}
+              </button>
+            )
+          )}
+          {!(
+            reportStatus === "Waiting confirmation" ||
+            reportStatus === "Cancel order"
+          ) && (
+            <div className="flex items-center gap-2">
+              <CgCloseR size={30} className="bg-[#303054] p-2 rounded-[4px] " />
+              {!(reportStatus === "Accept order") && (
+                <BsPencilSquare
+                  size={30}
+                  className="bg-[#303054] p-1 rounded-[4px]"
+                />
+              )}
+            </div>
+          )}
+        </div>
+      )}
     </div>
   );
 };
